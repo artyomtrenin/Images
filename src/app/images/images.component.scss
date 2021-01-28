@@ -1,0 +1,17 @@
+img {
+  margin-left: 3%;
+  margin-top: 75px;
+  width: 16.4%;
+  border-radius: 15px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+img:hover {
+  border-radius:200px 0px 200px 0px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
