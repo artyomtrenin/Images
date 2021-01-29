@@ -1,0 +1,25 @@
+<div class="parent" *ngIf="!checkAuth(); else elseBlock">
+  <mat-card>
+    <form>
+      <div>
+        <mat-form-field>
+          <mat-label>Username</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input type="password" matInput>
+        </mat-form-field>
+      </div>
+
+      <button mat-raised-button color="accent" routerLink="images"
+              (click)="authenticate()">Login</button>
+    </form>
+  </mat-card>
+</div>
+
+<ng-template #elseBlock>
+  <h1 class="parent">You are authenticated</h1>
+</ng-template>
